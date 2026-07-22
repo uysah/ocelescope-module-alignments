@@ -1,0 +1,108 @@
+// import "@r4pm/components/styles.css";
+// import { AlignmentListViewer, Theme } from "@r4pm/components";
+// import type { LogAlignments } from "@r4pm/components";
+// import { defineModuleRoute, useCurrentOcel } from "@ocelescope/core";
+
+// const sample: LogAlignments = {
+//   net: {
+//     places: [{ id: "p0" }, { id: "p1" }, { id: "p2" }],
+//     transitions: [
+//       { id: "a", label: "register request" },
+//       { id: "b", label: "decide" },
+//     ],
+//     arcs: [
+//       { nodes: ["p0", "a"] as [string, string], weight: 1 },
+//       { nodes: ["a", "p1"] as [string, string], weight: 1 },
+//       { nodes: ["p1", "b"] as [string, string], weight: 1 },
+//       { nodes: ["b", "p2"] as [string, string], weight: 1 },
+//     ],
+//     initial_marking: { p0: 1 },
+//     final_marking: { p2: 1 },
+//   },
+//   variant_alignments: [
+//     {
+//       activities: ["register request", "decide"],
+//       frequency: 60,
+//       result: {
+//         Ok: {
+//           cost: 0,
+//           states_visited: 5,
+//           moves: [
+//             { SyncMove: { trace_event_index: 0, transition: "a" } },
+//             { SyncMove: { trace_event_index: 1, transition: "b" } },
+//           ],
+//         },
+//       },
+//     },
+//     {
+//       activities: ["register request", "send reminder", "decide"],
+//       frequency: 40,
+//       result: {
+//         Ok: {
+//           cost: 2,
+//           states_visited: 11,
+//           moves: [
+//             { SyncMove: { trace_event_index: 0, transition: "a" } },
+//             { LogMove: { trace_event_index: 1 } },
+//             { SyncMove: { trace_event_index: 2, transition: "b" } },
+//           ],
+//         },
+//       },
+//     },
+//   ],
+//   fitness: { average_fitness: 0.85, log_fitness: 0.82, perfectly_fitting_frac: 0.6, total_costs: 80 },
+//   aggregated: {
+//     total_traces: 100,
+//     transition_stats: { a: { sync_fires: 100, model_fires: 0 }, b: { sync_fires: 80, model_fires: 20 } },
+//     log_move_counts: { "send reminder": 40 },
+//   },
+// };
+
+// function Alignments() {
+//   return (
+//     <Theme>
+//       <div style={{ height: "600px", width: "100%", padding: "20px" }}>
+//         <AlignmentListViewer data={sample} />
+//       </div>
+//     </Theme>
+//   );
+// }
+
+// export default Alignments; // plain component as default export
+
+// export const alignmentsRoute = defineModuleRoute({
+//   name: "alignments",
+//   label: "Alignments",
+//   requiresOcel: true,
+//   component: Alignments,
+// });
+
+import "@r4pm/components/styles.css";
+import { Box, LoadingOverlay } from "@mantine/core";
+import { defineModuleRoute, useCurrentOcel } from "@ocelescope/core";
+import type { LogAlignments } from "@r4pm/components";
+import { AlignmentListViewer, Theme } from "@r4pm/components";
+import { useGetAlignments } from "../api/example";
+
+function Alignments() {
+  const { id } = useCurrentOcel();
+  const { data, isPending } = useGetAlignments(id);
+
+  return (
+    <Theme>
+      <Box pos="relative" mih={200} style={{ height: "600px", width: "100%", padding: "20px" }}>
+        <LoadingOverlay visible={isPending || !data} />
+        {data && <AlignmentListViewer data={data as LogAlignments} />}
+      </Box>
+    </Theme>
+  );
+}
+
+export default Alignments;
+
+export const alignmentsRoute = defineModuleRoute({
+  component: Alignments,
+  label: "Alignments",
+  name: "alignments",
+  requiresOcel: true,
+});

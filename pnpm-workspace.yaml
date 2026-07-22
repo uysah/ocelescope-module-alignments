@@ -1,0 +1,12 @@
+packages:
+  - app
+  - frontend-modules/*
+# This template intentionally installs freshly-published @ocelescope packages,
+# so it opts out of pnpm's minimum-release-age cooldown. Remove this line if you
+# prefer to wait out your global cooldown for newly published dependencies.
+minimumReleaseAge: 0
+allowBuilds:
+  core-js: true
+  es5-ext: true
+  esbuild: true
+  sharp: true
