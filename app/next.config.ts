@@ -4,11 +4,15 @@ const apiBase = process.env.EXTERNAL_API_BASE_URL ?? "http://localhost:8000";
 
 const nextConfig: NextConfig = {
 	reactStrictMode: true,
+	experimental: {
+		proxyClientMaxBodySize: "1000gb",
+		proxyTimeout: 30 * 60 * 1000,
+	},
 	transpilePackages: [
 		"@mantine/charts",
 		"recharts",
 		"@instance/example-module",
-		 "@r4pm/components",
+		"@r4pm/components",
 		 
 	],
 	rewrites: async () => [

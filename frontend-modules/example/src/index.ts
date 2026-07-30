@@ -1,5 +1,5 @@
 import { defineModule, defineModuleRoute } from "@ocelescope/core";
-import { SparklesIcon } from "lucide-react";
+import { SquareCenterlineDashedVertical } from "lucide-react";
 import Hello from "./routes/Hello";
 
 const helloRoute = defineModuleRoute({
@@ -13,6 +13,6 @@ export default defineModule({
   label: "Example",
   description: "An example custom Ocelescope module",
   authors: [{ name: "Your Name" }],
-  icon: SparklesIcon,
+  icon: SquareCenterlineDashedVertical,
   routes: [helloRoute],
 });

@@ -23,7 +23,7 @@ def variant_alignment(proj_id: str, process_model: PetriNet, options: Optional["
     raw_result = r4pm.bindings.align_variants(process_model, proj_id, options)
     return [VariantAlignmentResult(**r) for r in raw_result]
 
-def compute_fitness(alignments:VariantAlignmentResult, process_model:PetriNet) -> FitnessResult:
+def compute_fitness(alignments:List[VariantAlignmentResult], process_model:PetriNet) -> FitnessResult:
     fitness = r4pm.bindings.compute_fitness([a.model_dump() for a in alignments],process_model)
     return FitnessResult(**fitness)
 
