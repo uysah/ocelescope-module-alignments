@@ -1,17 +1,17 @@
 import { defineModule, defineModuleRoute } from "@ocelescope/core";
 import { SquareCenterlineDashedVertical } from "lucide-react";
-import Hello from "./routes/Hello";
+import Alignments from "./pages/alignments";
 
 const helloRoute = defineModuleRoute({
-  name: "hello",
-  label: "Hello",
-  component: Hello,
+  name: "Alignments",
+  label: "Alignments",
+  component: Alignments,
 });
 
 export default defineModule({
-  name: "example",
-  label: "Example",
-  description: "An example custom Ocelescope module",
+  name: "Case-Centric Alignments",
+  label: "Alignments",
+  description: "Case-Centric Alignments",
   authors: [{ name: "Your Name" }],
   icon: SquareCenterlineDashedVertical,
   routes: [helloRoute],

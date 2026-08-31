@@ -7,12 +7,14 @@ import polars
 from ocelescope_backend.app.dependencies import  ApiOcel
 
 def preprocessing(ocel:ApiOcel) -> Tuple[str, PetriNet]: 
-    pm4py_ocel = ocel.ocel
-    otype = 'LogObject'
+    e2o = ocel.e2o.df
+    event_log_df = e2o.rename(columns={
+        "ocel:oid": "case:concept:name",
+        "ocel:activity": "concept:name",
+        "ocel:timestamp": "time:timestamp"})[["case:concept:name","concept:name","time:timestamp"]]
 
-    flattened_log = pm4py.ocel_flattening(pm4py_ocel,otype)
-
-    pl_df = polars.from_pandas(flattened_log)
+    
+    pl_df = polars.from_pandas(event_log_df)
     log_id = r4pm.import_item_from_df('EventLog', pl_df)
     proj_id = r4pm.bindings.log_to_activity_projection(log_id)
     process_model = r4pm.bindings.discover_alphaplusplusplus(proj_id)
