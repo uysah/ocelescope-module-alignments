@@ -4,7 +4,7 @@ version = "0.1.0"
 description = "An example Ocelescope backend module"
 requires-python = ">=3.11"
 dependencies = [
-  "ocelescope-backend>=0.5.0",
+  "ocelescope-backend>=0.6.0",
 ]
 
 [project.entry-points."ocelescope_backend.modules"]

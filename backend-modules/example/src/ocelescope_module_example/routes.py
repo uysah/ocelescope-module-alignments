@@ -21,7 +21,3 @@ def hello() -> HelloResponse:
 def get_alignments(ocel:ApiOcel) -> AlignmentsResponse:
     return compute_alignments(ocel)
 
-
-@router.get("/debug/ocels")
-def debug(session: ApiSession):
-    return list(session.ocels.keys())
