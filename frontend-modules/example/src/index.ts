@@ -1,12 +1,6 @@
 import { defineModule, defineModuleRoute } from "@ocelescope/core";
 import { SquareCenterlineDashedVertical } from "lucide-react";
-import Alignments from "./pages/alignments";
-
-const helloRoute = defineModuleRoute({
-  name: "Alignments",
-  label: "Alignments",
-  component: Alignments,
-});
+import {objectPageRoute} from "./pages/alignments";
 
 export default defineModule({
   name: "Case-Centric Alignments",
@@ -14,5 +8,5 @@ export default defineModule({
   description: "Case-Centric Alignments",
   authors: [{ name: "Your Name" }],
   icon: SquareCenterlineDashedVertical,
-  routes: [helloRoute],
+  routes: [objectPageRoute],
 });
