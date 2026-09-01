@@ -1,5 +1,5 @@
 import "@r4pm/components/styles.css";
-import { Box, LoadingOverlay, Tabs } from "@mantine/core";
+import { Box, LoadingOverlay, Tabs, Select } from "@mantine/core";
 import { defineModuleRoute, useCurrentOcel } from "@ocelescope/core";
 import type { LogAlignments } from "@r4pm/components";
 import { AlignmentListViewer, Theme } from "@r4pm/components";
@@ -51,6 +51,7 @@ const Alignment = () => {
           </Tabs.List>
             {objectTypes.map((objectType) => (
               <Tabs.Panel key={objectType} value={objectType} pt="md">
+                  <Select label="Model to align against" placeholder='Select Model' w={300} data={["Test1","test2"] }></Select>
                   <AlignmentComponent ocelId={id} objectType={objectType}/>
               </Tabs.Panel>
             ))}
@@ -59,7 +60,7 @@ const Alignment = () => {
   );
 }
 
-export const objectPageRoute = defineModuleRoute({
+export const alignmentspage = defineModuleRoute({
   component: Alignment,
   label: "example",
   name: "example",
