@@ -24,25 +24,25 @@ importers:
         version: 9.4.1(@mantine/core@9.4.1(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(dayjs@1.11.21)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
       '@mantine/dropzone':
         specifier: ^9.4.0
-        version: 9.4.1(@mantine/core@9.4.1(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
+        version: 9.5.0(@mantine/core@9.4.1(@mantine/hooks@9.5.0(react@19.2.7))(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@mantine/hooks@9.5.0(react@19.2.7))(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
       '@mantine/notifications':
         specifier: ^9.4.0
-        version: 9.4.1(@mantine/core@9.4.1(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
+        version: 9.5.0(@mantine/core@9.4.1(@mantine/hooks@9.5.0(react@19.2.7))(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@mantine/hooks@9.5.0(react@19.2.7))(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
       '@ocelescope/core':
         specifier: ^0.6.0
-        version: 0.6.0(e0a42002e2e36d99c538b52bddff32a5)
+        version: 0.6.0(5e7ebc3feecf7710e530f45d937d69b2)
       '@ocelescope/management':
         specifier: ^0.6.0
-        version: 0.6.0(@mantine/core@9.4.1(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@marko19907/string-to-color@1.0.2)(@ocelescope/api-base@0.6.0(@ocelescope/api-client@0.6.0(axios@1.18.1(debug@4.4.3))(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(zod@4.4.3)(zustand@5.0.14(@types/react@19.2.17)(immer@11.1.8)(react@19.2.7)(use-sync-external-store@1.6.0(react@19.2.7))))(@tanstack/react-query@5.101.2(react@19.2.7))(axios@1.18.1(debug@4.4.3))(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@ocelescope/core@0.6.0(e0a42002e2e36d99c538b52bddff32a5))(@ocelescope/resources@0.6.0(4c558e61479197f204f37528491ee17a))(dayjs@1.11.21)(lucide-react@1.22.0(react@19.2.7))(mantine-datatable@9.3.1(@mantine/core@9.4.1(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(clsx@2.1.1)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
+        version: 0.6.0(@mantine/core@9.4.1(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@marko19907/string-to-color@1.0.2)(@ocelescope/api-base@0.6.0(@ocelescope/api-client@0.6.0(axios@1.18.1(debug@4.4.3))(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(zod@4.4.3)(zustand@5.0.14(@types/react@19.2.17)(immer@11.1.8)(react@19.2.7)(use-sync-external-store@1.6.0(react@19.2.7))))(@tanstack/react-query@5.101.2(react@19.2.7))(axios@1.18.1(debug@4.4.3))(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@ocelescope/core@0.6.0(5385ca8e2f1aadaa7aaf27af909c7ca0))(@ocelescope/resources@0.6.0(6e50b08b9ad3c7bc66561da3ff107316))(dayjs@1.11.21)(lucide-react@1.22.0(react@19.2.7))(mantine-datatable@9.4.0(@mantine/core@9.4.1(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(clsx@2.1.1)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
       '@xyflow/react':
         specifier: ^12.10.1
-        version: 12.11.1(@types/react-dom@19.2.3(@types/react@19.2.17))(@types/react@19.2.17)(immer@11.1.8)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
+        version: 12.11.2(@types/react-dom@19.2.3(@types/react@19.2.17))(@types/react@19.2.17)(immer@11.1.8)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
       mantine-datatable:
         specifier: ^9.3.1
-        version: 9.3.1(@mantine/core@9.4.1(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(clsx@2.1.1)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
+        version: 9.4.0(@mantine/core@9.4.1(@mantine/hooks@9.5.0(react@19.2.7))(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@mantine/hooks@9.5.0(react@19.2.7))(clsx@2.1.1)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
       next:
         specifier: ^16.1.6
-        version: 16.2.9(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
+        version: 16.2.12(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
       react:
         specifier: ^19.2.0
         version: 19.2.7
@@ -68,6 +68,9 @@ importers:
       '@mantine/core':
         specifier: ^9.4.1
         version: 9.4.1(@mantine/hooks@9.5.0(react@19.2.7))(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
+      '@ocelescope/resources':
+        specifier: ^0.6.0
+        version: 0.6.0(6e50b08b9ad3c7bc66561da3ff107316)
       '@r4pm/components':
         specifier: ^0.2.0
         version: 0.2.0(@types/react-dom@19.2.3(@types/react@19.2.17))(@types/react@19.2.17)(immer@11.1.8)(plotly.js@3.6.0(mapbox-gl@1.13.3))(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
@@ -98,7 +101,7 @@ importers:
         version: 1.22.0(react@19.2.7)
       orval:
         specifier: ^8.5.2
-        version: 8.19.0(typescript@5.9.3)
+        version: 8.23.0(typescript@5.9.3)
       react:
         specifier: ^19.2.0
         version: 19.2.7
@@ -528,14 +531,6 @@ packages:
       react: ^19.2.0
       react-dom: ^19.2.0
 
-  '@mantine/dropzone@9.4.1':
-    resolution: {integrity: sha512-QmtwDsViRmIdiwpc3d1loV3ryb8L6O4y3aiuMnAcLxL31a9hUPlHUZAs6KSuA+XbziZDG4BjxRVYjB70PxwORg==}
-    peerDependencies:
-      '@mantine/core': 9.4.1
-      '@mantine/hooks': 9.4.1
-      react: ^19.2.0
-      react-dom: ^19.2.0
-
   '@mantine/dropzone@9.5.0':
     resolution: {integrity: sha512-U7jtGz8vZU2CWztVcdbhdtOXVqHmSKFtBurG2754NuaiJFzEGSNB+V0DkLrQSSixiwcm5lMzxJ/y2yjYugHgwA==}
     peerDependencies:
@@ -549,14 +544,6 @@ packages:
     peerDependencies:
       react: ^19.2.0
 
-  '@mantine/notifications@9.4.1':
-    resolution: {integrity: sha512-Sm1g8E8RkFmesxpNz9zFvOjkTVxOa7dJJjMGoHNIXH+9/wO0s9kInny4mVnxTbLJJsD6nTqIQlk1v8tq2C4Ftw==}
-    peerDependencies:
-      '@mantine/core': 9.4.1
-      '@mantine/hooks': 9.4.1
-      react: ^19.2.0
-      react-dom: ^19.2.0
-
   '@mantine/notifications@9.5.0':
     resolution: {integrity: sha512-IgLO0zUppRh17TbOI5kku5pyKCNoEOAwemJi/H+gmq20QQFIwd+SxJLQvGT+OrKib2eWDlG+Tz6DJSwx3rn+Vg==}
     peerDependencies:
@@ -564,11 +551,6 @@ packages:
       '@mantine/hooks': 9.5.0
       react: ^19.2.0
       react-dom: ^19.2.0
-
-  '@mantine/store@9.4.1':
-    resolution: {integrity: sha512-/DCZq0aqqIdm03J0RJ7pbzoau2cwY8ndSOjskHOKHhTeWMnOBdCKXA3oMO5aIDldDqJ9T7Io4Boh4Pt461zNQw==}
-    peerDependencies:
-      react: ^19.2.0
 
   '@mantine/store@9.5.0':
     resolution: {integrity: sha512-MeJybawnPCCIcfrpSjtbRERJXZWAdOKSp3afsl82e5HZZtKJepgvktD5lcS9hRrrAdGWywi7gcMduLT0bUHDzw==}
@@ -629,17 +611,8 @@ packages:
   '@next/env@16.2.12':
     resolution: {integrity: sha512-d0Z5Bc13Fa4nR8pFAKx2jay2yhJM16vlfHbTzYnUQAxlNb6B6lmn4hjt69lYNt4kRtyYP6gEM49lPRHNbIyneg==}
 
-  '@next/env@16.2.9':
-    resolution: {integrity: sha512-ki5VxxXfzD/9TDe13wyeTKIjQTAwBVpnr8KhRDUr8ltMUq1/NBpWNT5tiPoxiGl+PHM4X2ahSOiPk6iAimIzPg==}
-
   '@next/swc-darwin-arm64@16.2.12':
     resolution: {integrity: sha512-0W1R0teHWJrqKX0FH20IzzIWAOuGtBxPGuObrxy1lE8hQvCFj49KE8a3WUg0D7sq6rn6zkM4c7YGUnhudBS6oA==}
-    engines: {node: '>= 10'}
-    cpu: [arm64]
-    os: [darwin]
-
-  '@next/swc-darwin-arm64@16.2.9':
-    resolution: {integrity: sha512-HkfxNYUCmcct0Xsqib5KxqMSHV4AHJq857BNRchyBDs4YS19aHzVfn1kDuBYKqLLQBjXgnkIsjV2Kd4d2wzYhw==}
     engines: {node: '>= 10'}
     cpu: [arm64]
     os: [darwin]
@@ -650,21 +623,8 @@ packages:
     cpu: [x64]
     os: [darwin]
 
-  '@next/swc-darwin-x64@16.2.9':
-    resolution: {integrity: sha512-7IAtK4MeybpqRV9GRABWEhJ62mOS+rzWOzOTFie4cSEtm12xsoOMJRcECoZx3FHPzFAqN/IJtHqWAFOLfl152w==}
-    engines: {node: '>= 10'}
-    cpu: [x64]
-    os: [darwin]
-
   '@next/swc-linux-arm64-gnu@16.2.12':
     resolution: {integrity: sha512-+YqU2h1cQkHsGfvjAsrSmst8UIFBibBGm5x3Xgel8NLMiDQtNOM4sM2GOEMvG5YiOBNeN/Ykk8cQC2S0Xrqljg==}
-    engines: {node: '>= 10'}
-    cpu: [arm64]
-    os: [linux]
-    libc: [glibc]
-
-  '@next/swc-linux-arm64-gnu@16.2.9':
-    resolution: {integrity: sha512-hBD75iWpUtkL9SmQmcRhmLomn9jgkPzCEkbOcLgHymPEKzv+6ONy13RRiIEz/iEObjkS2Jlb5gYS2XGoS3X4rw==}
     engines: {node: '>= 10'}
     cpu: [arm64]
     os: [linux]
@@ -677,22 +637,8 @@ packages:
     os: [linux]
     libc: [musl]
 
-  '@next/swc-linux-arm64-musl@16.2.9':
-    resolution: {integrity: sha512-qZTI3pf9SGc/obr8NkQAekBxmp1QK+kVm+VAf3BALLfFAj+1kUhkTxmrWpVos9R/UYIA8AWX2p6cGI5WdwzVUA==}
-    engines: {node: '>= 10'}
-    cpu: [arm64]
-    os: [linux]
-    libc: [musl]
-
   '@next/swc-linux-x64-gnu@16.2.12':
     resolution: {integrity: sha512-7A3q26W+h7gnA15uqBToNuDqBEFZZcqh0mW2mn4AJh/G5pdg2RVE3n4slzLEliASZFG3NmsbEzng/x2Sh09mBg==}
-    engines: {node: '>= 10'}
-    cpu: [x64]
-    os: [linux]
-    libc: [glibc]
-
-  '@next/swc-linux-x64-gnu@16.2.9':
-    resolution: {integrity: sha512-xm0HfRNX+UkH4R3c18ynswjj5o5uEj/7iI9p9omdtTSIsRCzQqkGMA+10nzJ4EHnYC3as65IMhbbl5fWRUWHYg==}
     engines: {node: '>= 10'}
     cpu: [x64]
     os: [linux]
@@ -705,33 +651,14 @@ packages:
     os: [linux]
     libc: [musl]
 
-  '@next/swc-linux-x64-musl@16.2.9':
-    resolution: {integrity: sha512-QumimHkGEG6vM3PfEDWKyKen03NcqLOkeKB1EfcPe7VxzmEiCa4jNnMyBn/US5zcd/VE1CI+O8Ovb3lfjVHfGw==}
-    engines: {node: '>= 10'}
-    cpu: [x64]
-    os: [linux]
-    libc: [musl]
-
   '@next/swc-win32-arm64-msvc@16.2.12':
     resolution: {integrity: sha512-X6hzsOUJac/e7AWSbn9gQ9nzHld1xWP5iyjHpYWvud8pufB679O1xg4JDyKr8Xd69Jvd+kM2Der6uftiZCmjYA==}
     engines: {node: '>= 10'}
     cpu: [arm64]
     os: [win32]
 
-  '@next/swc-win32-arm64-msvc@16.2.9':
-    resolution: {integrity: sha512-hzQpKZvw8rAwI6A2uQh6SacCSvNAXaIkPNsWwzqqfRiIMiXMfH936skDhz1OO6KpvdKkJrgHHtqQOq5PIXOvdQ==}
-    engines: {node: '>= 10'}
-    cpu: [arm64]
-    os: [win32]
-
   '@next/swc-win32-x64-msvc@16.2.12':
     resolution: {integrity: sha512-F6fakeHuFTLOPt0bslQJdf+xtT+WIP9DVn/m4y1w1mRnVPyh3D/cNvzlRkxM444xfm+IvvYNSOrKiA2CDJ0Uxw==}
-    engines: {node: '>= 10'}
-    cpu: [x64]
-    os: [win32]
-
-  '@next/swc-win32-x64-msvc@16.2.9':
-    resolution: {integrity: sha512-qr2VL3Ce5QrwgO2yh1ujSBawrimjVKX8FGF/cOynmdYKJY0BdHpGVNIRK1tqONB10Vkm25Ub1BD2bkjWs4+96w==}
     engines: {node: '>= 10'}
     cpu: [x64]
     os: [win32]
@@ -819,25 +746,11 @@ packages:
       react-plotly.js: ^4.0.0
       react-zoom-pan-pinch: ^4.0.0
 
-  '@orval/angular@8.19.0':
-    resolution: {integrity: sha512-w3sBRPCVmZDlpbSGyBhVsrleMsrD63AzxYOFfLx+I/Wy6FxN1xartlOUGGyroQMFLDx+Lk74+olQQp6IVnRerg==}
-
   '@orval/angular@8.23.0':
     resolution: {integrity: sha512-9p4uXLzk3ox75ayKzBRqBRxNe+2iJTCHvcuoRrn3I91M8Bt/cgSUrwTDjN10VK5Mty6Nt02lxSmjJJicCmeJaw==}
 
-  '@orval/axios@8.19.0':
-    resolution: {integrity: sha512-Y8Unxm5AidLV7M9TZH4R2KESnIvnlx/Xueis8TaOV2lk7y8sR8s2wDhc4OgFc838YyuQjpHZe+7LDs/zV0BNdA==}
-
   '@orval/axios@8.23.0':
     resolution: {integrity: sha512-LH0TiTA83MWMVKIvYftrp+of+h/Y7NafWhjqEdf1cg+l7+PMU0eeKenbZ4B150sBttjuPprdQiepAFDfB0JVlg==}
-
-  '@orval/core@8.19.0':
-    resolution: {integrity: sha512-ytCtxmHwjUsrboTBwi22FUatfnM+4sYLu/XUOLbqHfteU5WmOmGuzHqwndlFTpN9IRY2XHhKRMyZG7IZ2f2Bww==}
-    peerDependencies:
-      '@faker-js/faker': '>=10'
-    peerDependenciesMeta:
-      '@faker-js/faker':
-        optional: true
 
   '@orval/core@8.23.0':
     resolution: {integrity: sha512-IU4XKQeuj9QM0okA51veSTptlQ+2HnAbEV36GEyPpoM+WTDZQeamKAEQ3EdzoIziNVPGVrRp2NdnY+N/bZ6Z2w==}
@@ -847,25 +760,11 @@ packages:
       '@faker-js/faker':
         optional: true
 
-  '@orval/effect@8.19.0':
-    resolution: {integrity: sha512-Tw69OcBsi3eNyQkCv8W9dmNTlVzjO8q9BnLQ/A5MhksGHHecr5nW6AIINSkkAm+3e2dURbLdvC5trxAqsZtg4w==}
-
   '@orval/effect@8.23.0':
     resolution: {integrity: sha512-xRhFExrhA4lIsErBnnV8u5pSjMKrCmr1QT+APafb5k0oHeagxGULLSmEk0xDxN40cdN4xdACyhaxE79nVNlNVA==}
 
-  '@orval/fetch@8.19.0':
-    resolution: {integrity: sha512-Dn6Tau2RRJeuS+n5A16cNbKZDVsi204O+sAcpa2Qro4eI2vJvXBP0XCy1eJXQ27FRkjH6t1Bsw/SSKKvnGEtxw==}
-
   '@orval/fetch@8.23.0':
     resolution: {integrity: sha512-70A7eQy4luqll5PEbeRgS8Lc1s4efFl+FUs0sGfp/YGVuDIZ+bNQgvKCZ9hfCBwmEWKaqWAtB6fN9ExNpI/5/A==}
-
-  '@orval/hono@8.19.0':
-    resolution: {integrity: sha512-w45nT8MleH9UDbiQJ2XXNoLeIwEnpCIFpja3cJlrdosabHfoFY/yxdKfrpKnGM73wvYWAxni2Wn+x4dhB15owg==}
-    peerDependencies:
-      typescript: '>=5'
-    peerDependenciesMeta:
-      typescript:
-        optional: true
 
   '@orval/hono@8.23.0':
     resolution: {integrity: sha512-SK4rb1GkPfsavmBC3iNUsLN9YQaduMt2fYteu4cl1D0xXLRZ2XvmYr1r48M0ru670JJiwGQ6Sh2NembFRdtBzg==}
@@ -875,38 +774,20 @@ packages:
       typescript:
         optional: true
 
-  '@orval/mcp@8.19.0':
-    resolution: {integrity: sha512-PDcGCZvpIRyAuvCwl2vy6mh45wJVztkBDLwiyWZNbnT74yj2tjeMeqee05ocauQyjWHVtsbjioP5NeaaWP1+zg==}
-
   '@orval/mcp@8.23.0':
     resolution: {integrity: sha512-SqzRN0OYg6AlY9bTwN/mDN+m5ZttKjjRnemw2pMkp8V5iUAb8SWmD5g3FD85GP2VNDAmGp6/Ank7oHHujPNgAQ==}
-
-  '@orval/mock@8.19.0':
-    resolution: {integrity: sha512-mhqHMcy3wVD7UjW9/obwzJqAlElOPG3r6wcImQyl2eKWATYOcqO/jvFAfd7D3WEXfPjDqV71TDUtFToSsUXtbQ==}
 
   '@orval/mock@8.23.0':
     resolution: {integrity: sha512-/lUyU0UwmX2NsM7AJWEWN8sm5I0aoUX8TnhhsbwV7OmsrY0vY+geC01W80vrUu96Tly/jdgVmlFGepxQcd6Pbw==}
 
-  '@orval/query@8.19.0':
-    resolution: {integrity: sha512-i5a37W+gGZ6lLlaYEXlmgfnGdxbXdBRhjzWxCLX23hrLsYZGPQ6tcbFxM116abm7giax4mxCMjtR57ceGdq6xw==}
-
   '@orval/query@8.23.0':
     resolution: {integrity: sha512-bl0AQauvI4k1drs4ZKhcQTSaWlbHV+QzZ076MZwz2ZHsupMTeDoJ9eOwafwkw9KDj+0RqGWb070jZ0B+UZyzqQ==}
-
-  '@orval/solid-start@8.19.0':
-    resolution: {integrity: sha512-196pvkS31R05WJp1nBDTKsg9PJLe1eAyxFt3BZN5wlbgUaX+GmPq68zb/v2pgUHnLTgt2LwpXkaLBovu0m+Saw==}
 
   '@orval/solid-start@8.23.0':
     resolution: {integrity: sha512-kc1dTNSmiWgdoS0KsVTrFGW+5I/qaUf2+MlyWcRkr4auwQeL1+IxDCY2GtvxPAoyr63wqiy0Eq3ueyVwppmQFw==}
 
-  '@orval/swr@8.19.0':
-    resolution: {integrity: sha512-0TPNEjzhxPTHI0zrtvySV13dPJ5E7fP15NIh2nv1FR8CXBzjp9HN51AFw910y78ehxb9RrxSMkoz8WMpwdK/7A==}
-
   '@orval/swr@8.23.0':
     resolution: {integrity: sha512-ZdzIi5Sw3ZkrJfp0gUUtjWH4zE/VI9bYC9vWkUjVgscdPr218Iv5ZvEroVZPGmvFfslnvr7BiOmY8sUCU8aQSA==}
-
-  '@orval/zod@8.19.0':
-    resolution: {integrity: sha512-8o2MZ3eGzQMRz2j0C4YvL8J+e1lYgA6oo6aTiizoqrgmXKLdMqFaoz1SWB0UoEYCURmhPEohfrGm3J1+SRcI9Q==}
 
   '@orval/zod@8.23.0':
     resolution: {integrity: sha512-As/epqTSLpuzvmXwpYtQk1wanBfcgZ77MBnnuVAdGD+fna1x4b9Ah5PA/J/157PdUeoIzQQwC+9NpDeWGTSr0g==}
@@ -926,6 +807,7 @@ packages:
   '@plotly/mapbox-gl@1.13.4':
     resolution: {integrity: sha512-sR3/Pe5LqT/fhYgp4rT4aSFf1rTsxMbGiH6Hojc7PH36ny5Bn17iVFUjpzycafETURuFbLZUfjODO8LvSI+5zQ==}
     engines: {node: '>=6.4.0'}
+    deprecated: This package is deprecated as of August 2026. plotly.js v4 uses MapLibre for map traces — see https://github.com/maplibre/maplibre-gl-js.
 
   '@plotly/point-cluster@3.1.9':
     resolution: {integrity: sha512-MwaI6g9scKf68Orpr1pHZ597pYx9uP8UEFXLPbsCmuw3a84obwz6pnMXGc90VhgDNeNiLEdlmuK7CPo+5PIxXw==}
@@ -1948,19 +1830,6 @@ packages:
   '@types/use-sync-external-store@0.0.6':
     resolution: {integrity: sha512-zFDAD+tlpf2r4asuHEj0XH6pY6i0g5NeAHPn+15wk3BV6JA69eERFXC1gyGThDkVa1zCyKr5jox1+2LbV/AMLg==}
 
-  '@xyflow/react@12.11.1':
-    resolution: {integrity: sha512-L+zBoLGSXham0MnlY8QqjfR7/C5JNw0zxkaey5aZ5XmCgJBAdH4+WRIu8CR40d3l/BdU635V6YbhBK1jMo8/6Q==}
-    peerDependencies:
-      '@types/react': '>=17'
-      '@types/react-dom': '>=17'
-      react: '>=17'
-      react-dom: '>=17'
-    peerDependenciesMeta:
-      '@types/react':
-        optional: true
-      '@types/react-dom':
-        optional: true
-
   '@xyflow/react@12.11.2':
     resolution: {integrity: sha512-eLAlDWJfWnQEhJwGMjlWdAXO9eYllKpliUmPQlAmOLxz6mExXuzMVDUKLMquixgkrtmMFFtug3jGKmYYld12cA==}
     peerDependencies:
@@ -1973,9 +1842,6 @@ packages:
         optional: true
       '@types/react-dom':
         optional: true
-
-  '@xyflow/system@0.0.78':
-    resolution: {integrity: sha512-lY0z2qP33fUhTva9Vaxrk0lqZta2pkbxB1trHAx1omnJqRtPvDlAQYV2r5fhS6AdpkulYmbNW0svy+A4/t4B/g==}
 
   '@xyflow/system@0.0.79':
     resolution: {integrity: sha512-czLyOh91NF0hIzbNzwi8I6GlqG23BHh2435OddfI6uiaLH3xdrdygO93gqgH1Bv9mhy8XPFQJOBn1FTq4LvEWA==}
@@ -2845,10 +2711,6 @@ packages:
   js-tokens@4.0.0:
     resolution: {integrity: sha512-RdJUflcE3cUzKiMqQgsCu06FPu9UdIJO0beYbPhHN4k6apgJtifcoCtT9bcxOpYBtpD2kCM6Sbzg4CausW/PKQ==}
 
-  js-yaml@4.2.0:
-    resolution: {integrity: sha512-ePWsvanv0DWuDRsW8dnt+R4jQ31SCRCQ7hhNcPXZPsoBZiemuZNYGf7adZdqX2D86j6rvKp3RpCxVTSb8WQlOw==}
-    hasBin: true
-
   js-yaml@4.3.0:
     resolution: {integrity: sha512-1td788aAnnZ5qs7V2QIRl1owjtYpbKt749Y3xauqQgwIIGF/xXWz1wMTEBx5O3LK3lXLVuqXPdPxj2BoFHaW9Q==}
     hasBin: true
@@ -2909,15 +2771,6 @@ packages:
 
   lunr@2.3.9:
     resolution: {integrity: sha512-zTU3DaZaF3Rt9rhN3uBMGQD3dD2/vFQqnvZCDv4dl5iOzq2IZQqTxu90r4E5J+nP70J3ilqVCrbho2eWaeW8Ow==}
-
-  mantine-datatable@9.3.1:
-    resolution: {integrity: sha512-w+KtNCUcNypgmpwYlbYF9zDb0e5gNFE5YI3ZrgE+9ISJxg/8hpmWyprA4YVMbKY8mC80zwOwaKoew5lLx0esoA==}
-    peerDependencies:
-      '@mantine/core': '>=9.0'
-      '@mantine/hooks': '>=9.0'
-      clsx: '>=2'
-      react: '>=19'
-      react-dom: '>=19'
 
   mantine-datatable@9.4.0:
     resolution: {integrity: sha512-yFym2vlboGaqSD1bqXVtADMWg8YJtdyc3USQUTSqcLgEWzRPQqK/9WBBU0+XVE2qvMHZfiunuJK+UZV4aa2KmA==}
@@ -3018,27 +2871,6 @@ packages:
       sass:
         optional: true
 
-  next@16.2.9:
-    resolution: {integrity: sha512-MEOJiq/UvuezAdqVSceHbqDgZt1kDw2tpGVOlsdIoJsQdbN2JY2hpVG4xnXGkbdJUOEWhnRfiu/O4Hpc9Juwww==}
-    engines: {node: '>=20.9.0'}
-    hasBin: true
-    peerDependencies:
-      '@opentelemetry/api': ^1.1.0
-      '@playwright/test': ^1.51.1
-      babel-plugin-react-compiler: '*'
-      react: ^18.2.0 || 19.0.0-rc-de68d2f4-20241204 || ^19.0.0
-      react-dom: ^18.2.0 || 19.0.0-rc-de68d2f4-20241204 || ^19.0.0
-      sass: ^1.3.0
-    peerDependenciesMeta:
-      '@opentelemetry/api':
-        optional: true
-      '@playwright/test':
-        optional: true
-      babel-plugin-react-compiler:
-        optional: true
-      sass:
-        optional: true
-
   normalize-svg-path@0.1.0:
     resolution: {integrity: sha512-1/kmYej2iedi5+ROxkRESL/pI02pkg0OBnaR4hJkSIX6+ORzepwbuUXfrdZaPjysTsJInj0Rj5NuX027+dMBvA==}
 
@@ -3070,16 +2902,6 @@ packages:
 
   once@1.4.0:
     resolution: {integrity: sha512-lNaJgI+2Q5URQBkccEKHTQOPaXdUxnZZElQTZY0MFUAuaEqe1E+Nyvgdz/aIyNi6Z9MzO5dv1H8n58/GELp3+w==}
-
-  orval@8.19.0:
-    resolution: {integrity: sha512-P/DFRVm4F/NZVg42x3K2/iUxPl3EWvuBLLxUPdxVqm2tOg7fAD1mqrigBpd3cg1DqXhN1PsD8bktLH8BMLh1Wg==}
-    engines: {node: '>=22.18.0'}
-    hasBin: true
-    peerDependencies:
-      prettier: '>=3.0.0'
-    peerDependenciesMeta:
-      prettier:
-        optional: true
 
   orval@8.23.0:
     resolution: {integrity: sha512-vvHeeAJTK/xhGgPh/yoo/xFpe1BPD0evxXOIfrpUMuf4utyn3HmKbkiMRDFS5MM2Typ7hh3rZ2qDeTLqHqf1gw==}
@@ -4123,13 +3945,6 @@ snapshots:
       react: 19.2.7
       react-dom: 19.2.7(react@19.2.7)
 
-  '@mantine/dropzone@9.4.1(@mantine/core@9.4.1(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(react-dom@19.2.7(react@19.2.7))(react@19.2.7)':
-    dependencies:
-      '@mantine/core': 9.4.1(@mantine/hooks@9.5.0(react@19.2.7))(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
-      react: 19.2.7
-      react-dom: 19.2.7(react@19.2.7)
-      react-dropzone: 15.0.0(react@19.2.7)
-
   '@mantine/dropzone@9.5.0(@mantine/core@9.4.1(@mantine/hooks@9.5.0(react@19.2.7))(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@mantine/hooks@9.5.0(react@19.2.7))(react-dom@19.2.7(react@19.2.7))(react@19.2.7)':
     dependencies:
       '@mantine/core': 9.4.1(@mantine/hooks@9.5.0(react@19.2.7))(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
@@ -4142,14 +3957,6 @@ snapshots:
     dependencies:
       react: 19.2.7
 
-  '@mantine/notifications@9.4.1(@mantine/core@9.4.1(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(react-dom@19.2.7(react@19.2.7))(react@19.2.7)':
-    dependencies:
-      '@mantine/core': 9.4.1(@mantine/hooks@9.5.0(react@19.2.7))(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
-      '@mantine/store': 9.4.1(react@19.2.7)
-      react: 19.2.7
-      react-dom: 19.2.7(react@19.2.7)
-      react-transition-group: 4.4.5(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
-
   '@mantine/notifications@9.5.0(@mantine/core@9.4.1(@mantine/hooks@9.5.0(react@19.2.7))(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@mantine/hooks@9.5.0(react@19.2.7))(react-dom@19.2.7(react@19.2.7))(react@19.2.7)':
     dependencies:
       '@mantine/core': 9.4.1(@mantine/hooks@9.5.0(react@19.2.7))(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
@@ -4158,10 +3965,6 @@ snapshots:
       react: 19.2.7
       react-dom: 19.2.7(react@19.2.7)
       react-transition-group: 4.4.5(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
-
-  '@mantine/store@9.4.1(react@19.2.7)':
-    dependencies:
-      react: 19.2.7
 
   '@mantine/store@9.5.0(react@19.2.7)':
     dependencies:
@@ -4219,54 +4022,28 @@ snapshots:
 
   '@next/env@16.2.12': {}
 
-  '@next/env@16.2.9': {}
-
   '@next/swc-darwin-arm64@16.2.12':
-    optional: true
-
-  '@next/swc-darwin-arm64@16.2.9':
     optional: true
 
   '@next/swc-darwin-x64@16.2.12':
     optional: true
 
-  '@next/swc-darwin-x64@16.2.9':
-    optional: true
-
   '@next/swc-linux-arm64-gnu@16.2.12':
-    optional: true
-
-  '@next/swc-linux-arm64-gnu@16.2.9':
     optional: true
 
   '@next/swc-linux-arm64-musl@16.2.12':
     optional: true
 
-  '@next/swc-linux-arm64-musl@16.2.9':
-    optional: true
-
   '@next/swc-linux-x64-gnu@16.2.12':
-    optional: true
-
-  '@next/swc-linux-x64-gnu@16.2.9':
     optional: true
 
   '@next/swc-linux-x64-musl@16.2.12':
     optional: true
 
-  '@next/swc-linux-x64-musl@16.2.9':
-    optional: true
-
   '@next/swc-win32-arm64-msvc@16.2.12':
     optional: true
 
-  '@next/swc-win32-arm64-msvc@16.2.9':
-    optional: true
-
   '@next/swc-win32-x64-msvc@16.2.12':
-    optional: true
-
-  '@next/swc-win32-x64-msvc@16.2.9':
     optional: true
 
   '@ocelescope/api-base@0.6.0(@ocelescope/api-client@0.6.0(axios@1.18.1(debug@4.4.3))(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(zod@4.4.3)(zustand@5.0.14(@types/react@19.2.17)(immer@11.1.8)(react@19.2.7)(use-sync-external-store@1.6.0(react@19.2.7))))(@tanstack/react-query@5.101.2(react@19.2.7))(axios@1.18.1(debug@4.4.3))(react-dom@19.2.7(react@19.2.7))(react@19.2.7)':
@@ -4305,7 +4082,7 @@ snapshots:
       '@marko19907/string-to-color': 1.0.2
       '@ocelescope/api-base': 0.6.0(@ocelescope/api-client@0.6.0(axios@1.18.1(debug@4.4.3))(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(zod@4.4.3)(zustand@5.0.14(@types/react@19.2.17)(immer@11.1.8)(react@19.2.7)(use-sync-external-store@1.6.0(react@19.2.7))))(@tanstack/react-query@5.101.2(react@19.2.7))(axios@1.18.1(debug@4.4.3))(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
       '@ocelescope/api-client': 0.6.0(axios@1.18.1(debug@4.4.3))(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(zod@4.4.3)(zustand@5.0.14(@types/react@19.2.17)(immer@11.1.8)(react@19.2.7)(use-sync-external-store@1.6.0(react@19.2.7)))
-      '@ocelescope/resources': 0.6.0(1537c1a00f70a93e614ecdad87d87933)
+      '@ocelescope/resources': 0.6.0(6e50b08b9ad3c7bc66561da3ff107316)
       '@tanstack/react-query': 5.101.2(react@19.2.7)
       '@tanstack/react-query-devtools': 5.101.2(@tanstack/react-query@5.101.2(react@19.2.7))(react@19.2.7)
       clsx: 2.1.1
@@ -4321,44 +4098,20 @@ snapshots:
       zod: 4.4.3
       zustand: 5.0.14(@types/react@19.2.17)(immer@11.1.8)(react@19.2.7)(use-sync-external-store@1.6.0(react@19.2.7))
 
-  '@ocelescope/core@0.6.0(e0a42002e2e36d99c538b52bddff32a5)':
-    dependencies:
-      '@mantine/core': 9.4.1(@mantine/hooks@9.5.0(react@19.2.7))(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
-      '@mantine/dropzone': 9.4.1(@mantine/core@9.4.1(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
-      '@mantine/notifications': 9.4.1(@mantine/core@9.4.1(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
-      '@marko19907/string-to-color': 1.0.2
-      '@ocelescope/api-base': 0.6.0(@ocelescope/api-client@0.6.0(axios@1.18.1(debug@4.4.3))(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(zod@4.4.3)(zustand@5.0.14(@types/react@19.2.17)(immer@11.1.8)(react@19.2.7)(use-sync-external-store@1.6.0(react@19.2.7))))(@tanstack/react-query@5.101.2(react@19.2.7))(axios@1.18.1(debug@4.4.3))(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
-      '@ocelescope/api-client': 0.6.0(axios@1.18.1(debug@4.4.3))(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(zod@4.4.3)(zustand@5.0.14(@types/react@19.2.17)(immer@11.1.8)(react@19.2.7)(use-sync-external-store@1.6.0(react@19.2.7)))
-      '@ocelescope/resources': 0.6.0(4c558e61479197f204f37528491ee17a)
-      '@tanstack/react-query': 5.101.2(react@19.2.7)
-      '@tanstack/react-query-devtools': 5.101.2(@tanstack/react-query@5.101.2(react@19.2.7))(react@19.2.7)
-      clsx: 2.1.1
-      content-disposition-attachment: 0.3.1
-      dayjs: 1.11.21
-      file-saver: 2.0.5
-      lucide-react: 1.22.0(react@19.2.7)
-      mantine-datatable: 9.3.1(@mantine/core@9.4.1(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(clsx@2.1.1)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
-      next: 16.2.9(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
-      qs: 6.15.3
-      react: 19.2.7
-      react-dom: 19.2.7(react@19.2.7)
-      zod: 4.4.3
-      zustand: 5.0.14(@types/react@19.2.17)(immer@11.1.8)(react@19.2.7)(use-sync-external-store@1.6.0(react@19.2.7))
-
-  '@ocelescope/management@0.6.0(@mantine/core@9.4.1(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@marko19907/string-to-color@1.0.2)(@ocelescope/api-base@0.6.0(@ocelescope/api-client@0.6.0(axios@1.18.1(debug@4.4.3))(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(zod@4.4.3)(zustand@5.0.14(@types/react@19.2.17)(immer@11.1.8)(react@19.2.7)(use-sync-external-store@1.6.0(react@19.2.7))))(@tanstack/react-query@5.101.2(react@19.2.7))(axios@1.18.1(debug@4.4.3))(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@ocelescope/core@0.6.0(e0a42002e2e36d99c538b52bddff32a5))(@ocelescope/resources@0.6.0(4c558e61479197f204f37528491ee17a))(dayjs@1.11.21)(lucide-react@1.22.0(react@19.2.7))(mantine-datatable@9.3.1(@mantine/core@9.4.1(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(clsx@2.1.1)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(react-dom@19.2.7(react@19.2.7))(react@19.2.7)':
+  '@ocelescope/management@0.6.0(@mantine/core@9.4.1(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@marko19907/string-to-color@1.0.2)(@ocelescope/api-base@0.6.0(@ocelescope/api-client@0.6.0(axios@1.18.1(debug@4.4.3))(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(zod@4.4.3)(zustand@5.0.14(@types/react@19.2.17)(immer@11.1.8)(react@19.2.7)(use-sync-external-store@1.6.0(react@19.2.7))))(@tanstack/react-query@5.101.2(react@19.2.7))(axios@1.18.1(debug@4.4.3))(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@ocelescope/core@0.6.0(5385ca8e2f1aadaa7aaf27af909c7ca0))(@ocelescope/resources@0.6.0(6e50b08b9ad3c7bc66561da3ff107316))(dayjs@1.11.21)(lucide-react@1.22.0(react@19.2.7))(mantine-datatable@9.4.0(@mantine/core@9.4.1(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(clsx@2.1.1)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(react-dom@19.2.7(react@19.2.7))(react@19.2.7)':
     dependencies:
       '@mantine/core': 9.4.1(@mantine/hooks@9.5.0(react@19.2.7))(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
       '@marko19907/string-to-color': 1.0.2
       '@ocelescope/api-base': 0.6.0(@ocelescope/api-client@0.6.0(axios@1.18.1(debug@4.4.3))(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(zod@4.4.3)(zustand@5.0.14(@types/react@19.2.17)(immer@11.1.8)(react@19.2.7)(use-sync-external-store@1.6.0(react@19.2.7))))(@tanstack/react-query@5.101.2(react@19.2.7))(axios@1.18.1(debug@4.4.3))(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
-      '@ocelescope/core': 0.6.0(e0a42002e2e36d99c538b52bddff32a5)
-      '@ocelescope/resources': 0.6.0(4c558e61479197f204f37528491ee17a)
+      '@ocelescope/core': 0.6.0(5e7ebc3feecf7710e530f45d937d69b2)
+      '@ocelescope/resources': 0.6.0(6e50b08b9ad3c7bc66561da3ff107316)
       dayjs: 1.11.21
       lucide-react: 1.22.0(react@19.2.7)
-      mantine-datatable: 9.3.1(@mantine/core@9.4.1(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(clsx@2.1.1)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
+      mantine-datatable: 9.4.0(@mantine/core@9.4.1(@mantine/hooks@9.5.0(react@19.2.7))(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@mantine/hooks@9.5.0(react@19.2.7))(clsx@2.1.1)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
       react: 19.2.7
       react-dom: 19.2.7(react@19.2.7)
 
-  '@ocelescope/resources@0.6.0(1537c1a00f70a93e614ecdad87d87933)':
+  '@ocelescope/resources@0.6.0(6e50b08b9ad3c7bc66561da3ff107316)':
     dependencies:
       '@floating-ui/react': 0.27.19(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
       '@hpcc-js/wasm-graphviz': 1.22.2
@@ -4378,45 +4131,9 @@ snapshots:
       react-plotly.js: 4.0.0(plotly.js@3.6.0(mapbox-gl@1.13.3))(react@19.2.7)
       react-zoom-pan-pinch: 4.0.3(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
 
-  '@ocelescope/resources@0.6.0(4c558e61479197f204f37528491ee17a)':
-    dependencies:
-      '@floating-ui/react': 0.27.19(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
-      '@hpcc-js/wasm-graphviz': 1.22.2
-      '@mantine/core': 9.4.1(@mantine/hooks@9.5.0(react@19.2.7))(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
-      '@ocelescope/api-base': 0.6.0(@ocelescope/api-client@0.6.0(axios@1.18.1(debug@4.4.3))(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(zod@4.4.3)(zustand@5.0.14(@types/react@19.2.17)(immer@11.1.8)(react@19.2.7)(use-sync-external-store@1.6.0(react@19.2.7))))(@tanstack/react-query@5.101.2(react@19.2.7))(axios@1.18.1(debug@4.4.3))(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
-      '@xyflow/react': 12.11.1(@types/react-dom@19.2.3(@types/react@19.2.17))(@types/react@19.2.17)(immer@11.1.8)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
-      dayjs: 1.11.21
-      elkjs: 0.11.1
-      file-saver: 2.0.5
-      html-to-image: 1.11.13
-      jspdf: 4.2.1
-      lucide-react: 1.22.0(react@19.2.7)
-      mantine-datatable: 9.3.1(@mantine/core@9.4.1(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(clsx@2.1.1)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
-      next: 16.2.9(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
-      react: 19.2.7
-      react-dom: 19.2.7(react@19.2.7)
-      react-plotly.js: 4.0.0(plotly.js@3.6.0(mapbox-gl@1.13.3))(react@19.2.7)
-      react-zoom-pan-pinch: 4.0.3(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
-
-  '@orval/angular@8.19.0(typescript@5.9.3)':
-    dependencies:
-      '@orval/core': 8.19.0(typescript@5.9.3)
-    transitivePeerDependencies:
-      - '@faker-js/faker'
-      - supports-color
-      - typescript
-
   '@orval/angular@8.23.0(typescript@5.9.3)':
     dependencies:
       '@orval/core': 8.23.0(typescript@5.9.3)
-    transitivePeerDependencies:
-      - '@faker-js/faker'
-      - supports-color
-      - typescript
-
-  '@orval/axios@8.19.0(typescript@5.9.3)':
-    dependencies:
-      '@orval/core': 8.19.0(typescript@5.9.3)
     transitivePeerDependencies:
       - '@faker-js/faker'
       - supports-color
@@ -4427,23 +4144,6 @@ snapshots:
       '@orval/core': 8.23.0(typescript@5.9.3)
     transitivePeerDependencies:
       - '@faker-js/faker'
-      - supports-color
-      - typescript
-
-  '@orval/core@8.19.0(typescript@5.9.3)':
-    dependencies:
-      '@scalar/openapi-types': 0.8.0
-      acorn: 8.17.0
-      compare-versions: 6.1.1
-      debug: 4.4.3
-      esbuild: 0.28.1
-      esutils: 2.0.3
-      fs-extra: 11.3.6
-      jiti: 2.7.0
-      remeda: 2.39.0
-      tinyglobby: 0.2.17
-      typedoc: 0.28.19(typescript@5.9.3)
-    transitivePeerDependencies:
       - supports-color
       - typescript
 
@@ -4465,27 +4165,10 @@ snapshots:
       - supports-color
       - typescript
 
-  '@orval/effect@8.19.0(typescript@5.9.3)':
-    dependencies:
-      '@orval/core': 8.19.0(typescript@5.9.3)
-      remeda: 2.39.0
-    transitivePeerDependencies:
-      - '@faker-js/faker'
-      - supports-color
-      - typescript
-
   '@orval/effect@8.23.0(typescript@5.9.3)':
     dependencies:
       '@orval/core': 8.23.0(typescript@5.9.3)
       remeda: 2.39.0
-    transitivePeerDependencies:
-      - '@faker-js/faker'
-      - supports-color
-      - typescript
-
-  '@orval/fetch@8.19.0(typescript@5.9.3)':
-    dependencies:
-      '@orval/core': 8.19.0(typescript@5.9.3)
     transitivePeerDependencies:
       - '@faker-js/faker'
       - supports-color
@@ -4499,17 +4182,6 @@ snapshots:
       - supports-color
       - typescript
 
-  '@orval/hono@8.19.0(typescript@5.9.3)':
-    dependencies:
-      '@orval/core': 8.19.0(typescript@5.9.3)
-      '@orval/zod': 8.19.0(typescript@5.9.3)
-      fs-extra: 11.3.6
-    optionalDependencies:
-      typescript: 5.9.3
-    transitivePeerDependencies:
-      - '@faker-js/faker'
-      - supports-color
-
   '@orval/hono@8.23.0(typescript@5.9.3)':
     dependencies:
       '@orval/core': 8.23.0(typescript@5.9.3)
@@ -4521,16 +4193,6 @@ snapshots:
       - '@faker-js/faker'
       - supports-color
 
-  '@orval/mcp@8.19.0(typescript@5.9.3)':
-    dependencies:
-      '@orval/core': 8.19.0(typescript@5.9.3)
-      '@orval/fetch': 8.19.0(typescript@5.9.3)
-      '@orval/zod': 8.19.0(typescript@5.9.3)
-    transitivePeerDependencies:
-      - '@faker-js/faker'
-      - supports-color
-      - typescript
-
   '@orval/mcp@8.23.0(typescript@5.9.3)':
     dependencies:
       '@orval/core': 8.23.0(typescript@5.9.3)
@@ -4541,28 +4203,9 @@ snapshots:
       - supports-color
       - typescript
 
-  '@orval/mock@8.19.0(typescript@5.9.3)':
-    dependencies:
-      '@orval/core': 8.19.0(typescript@5.9.3)
-      remeda: 2.39.0
-    transitivePeerDependencies:
-      - '@faker-js/faker'
-      - supports-color
-      - typescript
-
   '@orval/mock@8.23.0(typescript@5.9.3)':
     dependencies:
       '@orval/core': 8.23.0(typescript@5.9.3)
-      remeda: 2.39.0
-    transitivePeerDependencies:
-      - '@faker-js/faker'
-      - supports-color
-      - typescript
-
-  '@orval/query@8.19.0(typescript@5.9.3)':
-    dependencies:
-      '@orval/core': 8.19.0(typescript@5.9.3)
-      '@orval/fetch': 8.19.0(typescript@5.9.3)
       remeda: 2.39.0
     transitivePeerDependencies:
       - '@faker-js/faker'
@@ -4579,26 +4222,9 @@ snapshots:
       - supports-color
       - typescript
 
-  '@orval/solid-start@8.19.0(typescript@5.9.3)':
-    dependencies:
-      '@orval/core': 8.19.0(typescript@5.9.3)
-    transitivePeerDependencies:
-      - '@faker-js/faker'
-      - supports-color
-      - typescript
-
   '@orval/solid-start@8.23.0(typescript@5.9.3)':
     dependencies:
       '@orval/core': 8.23.0(typescript@5.9.3)
-    transitivePeerDependencies:
-      - '@faker-js/faker'
-      - supports-color
-      - typescript
-
-  '@orval/swr@8.19.0(typescript@5.9.3)':
-    dependencies:
-      '@orval/core': 8.19.0(typescript@5.9.3)
-      '@orval/fetch': 8.19.0(typescript@5.9.3)
     transitivePeerDependencies:
       - '@faker-js/faker'
       - supports-color
@@ -4608,15 +4234,6 @@ snapshots:
     dependencies:
       '@orval/core': 8.23.0(typescript@5.9.3)
       '@orval/fetch': 8.23.0(typescript@5.9.3)
-    transitivePeerDependencies:
-      - '@faker-js/faker'
-      - supports-color
-      - typescript
-
-  '@orval/zod@8.19.0(typescript@5.9.3)':
-    dependencies:
-      '@orval/core': 8.19.0(typescript@5.9.3)
-      remeda: 2.39.0
     transitivePeerDependencies:
       - '@faker-js/faker'
       - supports-color
@@ -4699,7 +4316,7 @@ snapshots:
     dependencies:
       '@radix-ui/themes': 3.3.0(@types/react-dom@19.2.3(@types/react@19.2.17))(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
       '@tanstack/react-virtual': 3.14.8(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
-      '@xyflow/react': 12.11.1(@types/react-dom@19.2.3(@types/react@19.2.17))(@types/react@19.2.17)(immer@11.1.8)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
+      '@xyflow/react': 12.11.2(@types/react-dom@19.2.3(@types/react@19.2.17))(@types/react@19.2.17)(immer@11.1.8)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
       elkjs: 0.10.2
       html-to-image: 1.11.13
       react: 19.2.7
@@ -5748,19 +5365,6 @@ snapshots:
 
   '@types/use-sync-external-store@0.0.6': {}
 
-  '@xyflow/react@12.11.1(@types/react-dom@19.2.3(@types/react@19.2.17))(@types/react@19.2.17)(immer@11.1.8)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)':
-    dependencies:
-      '@xyflow/system': 0.0.78
-      classcat: 5.0.5
-      react: 19.2.7
-      react-dom: 19.2.7(react@19.2.7)
-      zustand: 4.5.7(@types/react@19.2.17)(immer@11.1.8)(react@19.2.7)
-    optionalDependencies:
-      '@types/react': 19.2.17
-      '@types/react-dom': 19.2.3(@types/react@19.2.17)
-    transitivePeerDependencies:
-      - immer
-
   '@xyflow/react@12.11.2(@types/react-dom@19.2.3(@types/react@19.2.17))(@types/react@19.2.17)(immer@11.1.8)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)':
     dependencies:
       '@xyflow/system': 0.0.79
@@ -5773,18 +5377,6 @@ snapshots:
       '@types/react-dom': 19.2.3(@types/react@19.2.17)
     transitivePeerDependencies:
       - immer
-
-  '@xyflow/system@0.0.78':
-    dependencies:
-      '@types/d3-drag': 3.0.7
-      '@types/d3-interpolate': 3.0.4
-      '@types/d3-selection': 3.0.11
-      '@types/d3-transition': 3.0.9
-      '@types/d3-zoom': 3.0.8
-      d3-drag: 3.0.0
-      d3-interpolate: 3.0.1
-      d3-selection: 3.0.0
-      d3-zoom: 3.0.0
 
   '@xyflow/system@0.0.79':
     dependencies:
@@ -6696,10 +6288,6 @@ snapshots:
 
   js-tokens@4.0.0: {}
 
-  js-yaml@4.2.0:
-    dependencies:
-      argparse: 2.0.1
-
   js-yaml@4.3.0:
     dependencies:
       argparse: 2.0.1
@@ -6756,13 +6344,6 @@ snapshots:
       react: 19.2.7
 
   lunr@2.3.9: {}
-
-  mantine-datatable@9.3.1(@mantine/core@9.4.1(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(clsx@2.1.1)(react-dom@19.2.7(react@19.2.7))(react@19.2.7):
-    dependencies:
-      '@mantine/core': 9.4.1(@mantine/hooks@9.5.0(react@19.2.7))(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
-      clsx: 2.1.1
-      react: 19.2.7
-      react-dom: 19.2.7(react@19.2.7)
 
   mantine-datatable@9.4.0(@mantine/core@9.4.1(@mantine/hooks@9.5.0(react@19.2.7))(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(@mantine/hooks@9.5.0(react@19.2.7))(clsx@2.1.1)(react-dom@19.2.7(react@19.2.7))(react@19.2.7):
     dependencies:
@@ -6903,30 +6484,6 @@ snapshots:
       - '@babel/core'
       - babel-plugin-macros
 
-  next@16.2.9(react-dom@19.2.7(react@19.2.7))(react@19.2.7):
-    dependencies:
-      '@next/env': 16.2.9
-      '@swc/helpers': 0.5.15
-      baseline-browser-mapping: 2.10.40
-      caniuse-lite: 1.0.30001800
-      postcss: 8.4.31
-      react: 19.2.7
-      react-dom: 19.2.7(react@19.2.7)
-      styled-jsx: 5.1.6(react@19.2.7)
-    optionalDependencies:
-      '@next/swc-darwin-arm64': 16.2.9
-      '@next/swc-darwin-x64': 16.2.9
-      '@next/swc-linux-arm64-gnu': 16.2.9
-      '@next/swc-linux-arm64-musl': 16.2.9
-      '@next/swc-linux-x64-gnu': 16.2.9
-      '@next/swc-linux-x64-musl': 16.2.9
-      '@next/swc-win32-arm64-msvc': 16.2.9
-      '@next/swc-win32-x64-msvc': 16.2.9
-      sharp: 0.34.5
-    transitivePeerDependencies:
-      - '@babel/core'
-      - babel-plugin-macros
-
   normalize-svg-path@0.1.0: {}
 
   normalize-svg-path@1.1.0:
@@ -6955,42 +6512,6 @@ snapshots:
   once@1.4.0:
     dependencies:
       wrappy: 1.0.2
-
-  orval@8.19.0(typescript@5.9.3):
-    dependencies:
-      '@commander-js/extra-typings': 15.0.0(commander@15.0.0)
-      '@orval/angular': 8.19.0(typescript@5.9.3)
-      '@orval/axios': 8.19.0(typescript@5.9.3)
-      '@orval/core': 8.19.0(typescript@5.9.3)
-      '@orval/effect': 8.19.0(typescript@5.9.3)
-      '@orval/fetch': 8.19.0(typescript@5.9.3)
-      '@orval/hono': 8.19.0(typescript@5.9.3)
-      '@orval/mcp': 8.19.0(typescript@5.9.3)
-      '@orval/mock': 8.19.0(typescript@5.9.3)
-      '@orval/query': 8.19.0(typescript@5.9.3)
-      '@orval/solid-start': 8.19.0(typescript@5.9.3)
-      '@orval/swr': 8.19.0(typescript@5.9.3)
-      '@orval/zod': 8.19.0(typescript@5.9.3)
-      '@scalar/json-magic': 0.12.17
-      '@scalar/openapi-parser': 0.28.8
-      '@scalar/openapi-types': 0.8.0
-      chokidar: 5.0.0
-      commander: 15.0.0
-      execa: 9.6.1
-      find-up: 8.0.0
-      fs-extra: 11.3.6
-      get-tsconfig: 4.14.0
-      jiti: 2.7.0
-      js-yaml: 4.2.0
-      remeda: 2.39.0
-      string-argv: 0.3.2
-      typedoc: 0.28.19(typescript@5.9.3)
-      typedoc-plugin-coverage: 4.0.3(typedoc@0.28.19(typescript@5.9.3))
-      typedoc-plugin-markdown: 4.12.0(typedoc@0.28.19(typescript@5.9.3))
-    transitivePeerDependencies:
-      - '@faker-js/faker'
-      - supports-color
-      - typescript
 
   orval@8.23.0(typescript@5.9.3):
     dependencies:
