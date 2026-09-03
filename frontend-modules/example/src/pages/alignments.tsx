@@ -1,5 +1,5 @@
 import "@r4pm/components/styles.css";
-import { Box, LoadingOverlay, Tabs, Select } from "@mantine/core";
+import { Box, LoadingOverlay, Tabs, Select, Stack } from "@mantine/core";
 import { defineModuleRoute, useCurrentOcel } from "@ocelescope/core";
 import type { LogAlignments } from "@r4pm/components";
 import { AlignmentListViewer, Theme } from "@r4pm/components";
@@ -38,7 +38,8 @@ const Alignment = () => {
 
   return (<Theme style={{height:"100%", minHeight:0}}>
       {otherObjectTypes.length > 0 ? (
-        <Tabs defaultValue={firstObjectType} keepMounted={false}>
+        <Tabs defaultValue={firstObjectType} keepMounted={false} h={"100%"}>
+          <Stack h="100%" gap={"xs"}>
           <Tabs.List>
             {objectTypes.map((objectType) => (
               <Tabs.Tab key={objectType} value={objectType}>
@@ -47,11 +48,10 @@ const Alignment = () => {
             ))}
           </Tabs.List>
             {objectTypes.map((objectType) => (
-              <Tabs.Panel key={objectType} value={objectType} pt="md">
-                  <Select label="Model to align against" placeholder='Select Model' w={300} data={["Test1","test2"] }></Select>
+              <Tabs.Panel key={objectType} value={objectType} pt="md" flex={1}>
                   <AlignmentComponent ocelId={id} objectType={objectType}/>
               </Tabs.Panel>
-            ))}
+            ))}</Stack>
           </Tabs>): <AlignmentComponent ocelId={id} objectType={firstObjectType}/>}
   </Theme>
   );
