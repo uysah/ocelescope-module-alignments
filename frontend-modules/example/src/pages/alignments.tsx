@@ -15,12 +15,10 @@ const AlignmentComponent = ({
 const { data, isPending } = useGetAlignments(ocelId, { object_type: objectType });
 
   return (
-    <Theme>
-      <Box pos="relative" mih={600} style={{ height: "1000px", width: "100%", padding: "20px", overflow: "visible"}}>
-        <LoadingOverlay visible={isPending || !data} />
+    <Box pos={"relative"} h={"100%"}>
+       <LoadingOverlay visible={isPending || !data} />
         {data && <AlignmentListViewer data={data as LogAlignments} />}
-      </Box>
-    </Theme>
+    </Box>
   );
 }
 
@@ -38,8 +36,7 @@ const Alignment = () => {
     return null;
   }
 
-  return (
-    <Theme>
+  return (<Theme style={{height:"100%", minHeight:0}}>
       {otherObjectTypes.length > 0 ? (
         <Tabs defaultValue={firstObjectType} keepMounted={false}>
           <Tabs.List>
@@ -56,7 +53,7 @@ const Alignment = () => {
               </Tabs.Panel>
             ))}
           </Tabs>): <AlignmentComponent ocelId={id} objectType={firstObjectType}/>}
-    </Theme>
+  </Theme>
   );
 }
 

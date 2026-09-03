@@ -8,7 +8,7 @@
 		"sync:backend": "uv sync",
 		"sync:frontend": "pnpm install && pnpm run build:modules",
 		"build:modules": "pnpm -r --filter \"!@instance/app\" run build",
-		"dev": "pnpm run dev:backend & pnpm run dev:app",
+		"dev": "pnpm run dev:backend && pnpm run dev:app",
 		"dev:backend": "uv run ocelescope-backend serve --reload --reload-dir backend-modules --env-file .env",
 		"dev:app": "pnpm --filter @instance/app dev",
 		"dev:modules": "pnpm -r --parallel --filter \"!@instance/app\" run dev"
