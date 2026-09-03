@@ -4,31 +4,34 @@ from typing import Optional,Tuple, List, Dict
 import r4pm
 import pm4py
 import polars
-from ocelescope_backend.app.dependencies import  ApiOcel
-import re
+from ocelescope import  OCEL
 
-def eid_seq(eid: str) -> int:
-        m = re.search(r'(\d+)$', eid)
-        return int(m.group(1)) if m else -1
-
-def preprocessing(ocel:ApiOcel, object_type) -> Tuple[str, PetriNet]: 
-    e2o_df = ocel.e2o.df.reset_index(drop=True)
-    case_relations = e2o_df[e2o_df["ocel:type"] == object_type]
-    case_relations = case_relations.copy()
-
-    case_relations["eid_seq"] = case_relations["ocel:eid"].apply(eid_seq)
-
-    event_log_df = case_relations.rename(columns={
-        "ocel:oid": "case:concept:name",
-        "ocel:activity": "concept:name",
-        "ocel:timestamp": "time:timestamp",
-    })[["case:concept:name", "concept:name", "time:timestamp", "eid_seq"]]
-
-    event_log_df = event_log_df.sort_values(
-        ["case:concept:name", "time:timestamp", "eid_seq"], kind="stable"
-    ).drop(columns="eid_seq")
-    pl_df = polars.from_pandas(event_log_df)
-    log_id = r4pm.import_item_from_df('EventLog', pl_df)
+def preprocessing(ocel:OCEL, object_type) -> Tuple[str, PetriNet]: 
+    event_log_df = ocel.sql(f"""
+        SELECT
+            rel."ocel:oid" as "case:concept:name",
+            ev."ocel:timestamp" as "time:timestamp",
+            ev."ocel:activity" as "concept:name"
+        FROM
+            e2o rel
+            RIGHT JOIN (
+                SELECT
+                    *
+                FROM
+                    objects
+                WHERE
+                    "ocel:type" = '{object_type}'
+                ) ob USING ("ocel:oid")
+            LEFT JOIN (
+            SELECT
+            *
+            FROM
+            events
+            ) ev USING ("ocel:eid")
+            ORDER BY
+            ("time:timestamp", "case:concept:name", "concept:name")
+                """).pl()
+    log_id = r4pm.import_item_from_df('EventLog', event_log_df)
     proj_id = r4pm.bindings.log_to_activity_projection(log_id)
     process_model = r4pm.bindings.discover_alphaplusplusplus(proj_id)
 
@@ -98,7 +101,7 @@ def convert_net(petri_net) -> Net:
         final_marking=final_marking,
     )
 
-def compute_alignments(ocel:ApiOcel, object_type:str):
+def compute_alignments(ocel:OCEL, object_type:str):
     (proj_id, process_model) = preprocessing(ocel,object_type)
     options = {"cost_fn": {"log_move_cost": 1, "model_move_cost": 1, "silent_move_cost": 0, "sync_move_cost": 0}}
     alignments = variant_alignment(proj_id,process_model,options)
