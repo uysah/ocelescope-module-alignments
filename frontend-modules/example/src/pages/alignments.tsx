@@ -18,13 +18,15 @@ const AlignmentComponent = ({
   const [resourceId, setResourceId] = useState<string | null>(null)
   const { data, isPending } = useGetAlignments(ocelId, { object_type: objectType, resource_id:resourceId}, {query:{placeholderData:keepPreviousData}});
 
-  return (
-    <Box pos={"relative"} h={"100%"}>
-      <LoadingOverlay visible={isPending || !data} /> 
-      <ResourceSelect label="Petri Net" description="asd" type="PetriNet" value={resourceId} onChange={(newResourceId) => setResourceId(newResourceId as string)} />
+return (
+  <Box pos="relative" h="100%" style={{ display: "flex", flexDirection: "column", minHeight: 0 }}>
+    <LoadingOverlay visible={isPending || !data} />
+    <ResourceSelect label="Petri Net" type="PetriNet" value={resourceId} onChange={(newResourceId) => setResourceId(newResourceId as string)}/>
+    <Box style={{ flex: 1, minHeight: 0, overflow: "hidden" }}>
       {data && <AlignmentListViewer data={data as LogAlignments} />}
     </Box>
-  );
+  </Box>
+);
 }
 
 
