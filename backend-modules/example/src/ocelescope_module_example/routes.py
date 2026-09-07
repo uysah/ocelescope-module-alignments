@@ -22,7 +22,6 @@ def get_alignments(
     else:
         petri_net = None 
 
-
     return compute_alignments(ocel, object_type, petri_net)
 
 
