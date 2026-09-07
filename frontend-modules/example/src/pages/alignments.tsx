@@ -21,7 +21,13 @@ const AlignmentComponent = ({
 return (
   <Box pos="relative" h="100%" style={{ display: "flex", flexDirection: "column", minHeight: 0 }}>
     <LoadingOverlay visible={isPending || !data} />
-    <ResourceSelect label="Petri Net" type="PetriNet" value={resourceId} onChange={(newResourceId) => setResourceId(newResourceId as string)}/>
+      {data && <ResourceSelect 
+          label="Model" 
+          description="Select Process Model to align against" 
+          type="PetriNet" 
+          value={resourceId} 
+          placeholder="Auto-Discover Alpha +++"
+          onChange={(newResourceId) => setResourceId(newResourceId as string)}/>}
     <Box style={{ flex: 1, minHeight: 0, overflow: "hidden" }}>
       {data && <AlignmentListViewer data={data as LogAlignments} />}
     </Box>
