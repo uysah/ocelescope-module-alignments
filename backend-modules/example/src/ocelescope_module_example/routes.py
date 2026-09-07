@@ -16,8 +16,14 @@ class HelloResponse(BaseModel):
 def get_alignments(
     ocel: ApiOcel, session: ApiSession, object_type: str, resource_id: str | None = None
 ) -> AlignmentsResponse:
-    petri_net = cast(PetriNet,session.get_resource(resource_id)) if resource_id else None
-    return compute_alignments(ocel, object_type)
+    if resource_id:
+        resource_store = cast(PetriNet,session.get_resource(resource_id))
+        petri_net = PetriNet(**resource_store.data)
+    else:
+        petri_net = None 
+
+
+    return compute_alignments(ocel, object_type, petri_net)
 
 
 @router.get("/{ocel_id}/objects/types", operation_id="objectTypes")

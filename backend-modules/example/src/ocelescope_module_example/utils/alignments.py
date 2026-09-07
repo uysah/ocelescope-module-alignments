@@ -101,7 +101,7 @@ def convert_net(petri_net) -> Net:
         final_marking=final_marking,
     )
 
-def compute_alignments(ocel:OCEL, object_type:str):
+def compute_alignments(ocel:OCEL, object_type:str, petri_net: PetriNet | None):
     (proj_id, process_model) = preprocessing(ocel,object_type)
     options = {"cost_fn": {"log_move_cost": 1, "model_move_cost": 1, "silent_move_cost": 0, "sync_move_cost": 0}}
     alignments = variant_alignment(proj_id,process_model,options)
