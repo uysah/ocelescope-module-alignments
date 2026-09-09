@@ -95,6 +95,16 @@ def convert_net(petri_net: R4PMPetriNet) -> Net:
         final_marking=final_marking,
     )
 
+def is_flattened(petri_net: PetriNet) -> bool:
+    object_types = set()
+    for place in petri_net.places:
+        object_types.add(place.object_type)
+        if len(object_types) > 1:
+            return False
+
+    return len(object_types) == 1
+
+
 def preprocessing(ocel:OCEL, object_type:str, petri_net: PetriNet | None) -> Tuple[str, R4PMPetriNet]: 
     event_log_df = ocel.sql(f"""
         SELECT
@@ -123,7 +133,10 @@ def preprocessing(ocel:OCEL, object_type:str, petri_net: PetriNet | None) -> Tup
     log_id = r4pm.import_item_from_df('EventLog', event_log_df)
     proj_id = r4pm.bindings.log_to_activity_projection(log_id)
     if petri_net:
-        process_model = to_r4pm_format(flatten(petri_net,object_type))
+        if is_flattened(petri_net):
+            process_model = to_r4pm_format(petri_net)
+        else:
+            process_model = to_r4pm_format(flatten(petri_net,object_type))
     else:
         process_model = r4pm.bindings.discover_alphaplusplusplus(proj_id)
     return proj_id,process_model
