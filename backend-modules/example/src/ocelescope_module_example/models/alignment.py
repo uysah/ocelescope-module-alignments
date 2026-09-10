@@ -44,7 +44,7 @@ class NetArc(BaseModel):
     nodes: Tuple[str, str]
     weight: int
 
-class Net(BaseModel):
+class ResponseNet(BaseModel):
     places: List[NetPlace]
     transitions: List[NetTransition]
     arcs: List[NetArc]
@@ -52,7 +52,7 @@ class Net(BaseModel):
     final_marking: Dict[str, int]
 
 class AlignmentsResponse(BaseModel):
-    net: Net
+    net: ResponseNet
     variant_alignments: List[VariantAlignmentResult]
     fitness: FitnessResult
     aggregated: Aggregated

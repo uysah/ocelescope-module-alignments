@@ -1,5 +1,5 @@
 from ocelescope import PetriNet
-from ocelescope_module_example.models.alignment import VariantAlignmentResult, AlignmentOptions,FitnessResult, Aggregated, TransitionStat, AlignmentsResponse, Net, NetArc, NetPlace, NetTransition
+from ocelescope_module_example.models.alignment import VariantAlignmentResult, AlignmentOptions,FitnessResult, Aggregated, TransitionStat, AlignmentsResponse, ResponseNet, NetArc, NetPlace, NetTransition
 from typing import Optional,Tuple, List, Dict
 import r4pm
 import polars
@@ -70,7 +70,7 @@ def flatten(petri_net: PetriNet, object_type: str) -> PetriNet:
         final_marking=final_marking_flatten,
     )
 
-def convert_net(petri_net: R4PMPetriNet) -> Net:
+def convert_net(petri_net: R4PMPetriNet) -> ResponseNet:
     places = [NetPlace(id=p_id) for p_id in petri_net["places"].keys()]
     transitions = [
         NetTransition(id=t_id, label=t.get("label"))
@@ -87,7 +87,7 @@ def convert_net(petri_net: R4PMPetriNet) -> Net:
     final_markings = petri_net.get("final_markings") or []
     final_marking = final_markings[0] if final_markings else {}
 
-    return Net(
+    return ResponseNet(
         places=places,
         transitions=transitions,
         arcs=arcs,
