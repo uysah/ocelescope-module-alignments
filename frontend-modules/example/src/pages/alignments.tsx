@@ -2,7 +2,8 @@ import "@r4pm/components/styles.css";
 import { Box, Button, LoadingOverlay, Tabs, Stack, Text, Group, SegmentedControl } from "@mantine/core";
 import { defineModuleRoute, useCurrentOcel } from "@ocelescope/core";
 import type { LogAlignments } from "@r4pm/components";
-import { AlignmentListViewer, Theme, AlignmentNetViewer  } from "@r4pm/components";
+import { AlignmentListViewer, Theme, AlignmentNetViewer, ViewerConfigProvider } from "@r4pm/components";
+import { wasmLayout } from "@r4pm/components/rust-layout/wasm";
 import { useGetAlignments, useObjectTypes } from "../api/example";
 import { ResourceSelect } from "@ocelescope/resources";
 import { useState } from "react";
@@ -52,7 +53,12 @@ const AlignmentComponent = ({
             Select a model (or leave on Auto-Discover) and press Run to compute alignments.
           </Text>
         ) : (
-          data && (mode === "list" ? (<AlignmentListViewer data={data as LogAlignments}/>) : (<AlignmentNetViewer data={data as LogAlignments}/>))
+          data && (mode === "list" ? 
+          (<AlignmentListViewer data={data as LogAlignments}/>) 
+          : (
+          <ViewerConfigProvider value={{ layout: wasmLayout }}>
+              <AlignmentNetViewer data={data as LogAlignments} />
+          </ViewerConfigProvider>))
         )}
       </Box>
     </Box>
