@@ -1,8 +1,8 @@
 import "@r4pm/components/styles.css";
-import { Box, Button, LoadingOverlay, Tabs, Stack, Text, Group } from "@mantine/core";
+import { Box, Button, LoadingOverlay, Tabs, Stack, Text, Group, SegmentedControl } from "@mantine/core";
 import { defineModuleRoute, useCurrentOcel } from "@ocelescope/core";
 import type { LogAlignments } from "@r4pm/components";
-import { AlignmentListViewer, Theme } from "@r4pm/components";
+import { AlignmentListViewer, Theme, AlignmentNetViewer  } from "@r4pm/components";
 import { useGetAlignments, useObjectTypes } from "../api/example";
 import { ResourceSelect } from "@ocelescope/resources";
 import { useState } from "react";
@@ -12,9 +12,11 @@ import { PlayIcon } from "lucide-react";
 const AlignmentComponent = ({
   ocelId,
   objectType,
+  mode
 }: {
   ocelId: string;
   objectType: string;
+  mode: string;
 }) => {
   const [resourceId, setResourceId] = useState<string | null>(null);
   const [hasRun, setHasRun] = useState(false);
@@ -50,7 +52,7 @@ const AlignmentComponent = ({
             Select a model (or leave on Auto-Discover) and press Run to compute alignments.
           </Text>
         ) : (
-          data && <AlignmentListViewer data={data as LogAlignments} />
+          data && (mode === "list" ? (<AlignmentListViewer data={data as LogAlignments}/>) : (<AlignmentNetViewer data={data as LogAlignments}/>))
         )}
       </Box>
     </Box>
@@ -60,6 +62,7 @@ const AlignmentComponent = ({
 const Alignment = () => {
   const { id } = useCurrentOcel();
   const { data: objectTypes } = useObjectTypes(id, undefined, { query: { enabled: !!id } });
+  const [mode, setMode] = useState<"list" | "net">('list');
 
   if (!id || !objectTypes) {
     return <LoadingOverlay visible />;
@@ -75,22 +78,29 @@ const Alignment = () => {
       {otherObjectTypes.length > 0 ? (
         <Tabs defaultValue={firstObjectType} keepMounted={false} h={"100%"}>
           <Stack h="100%" gap={"xs"}>
-            <Tabs.List>
+            <Tabs.List mb="sm">
               {objectTypes.map((objectType) => (
                 <Tabs.Tab key={objectType} value={objectType}>
                   {objectType}
                 </Tabs.Tab>
               ))}
             </Tabs.List>
+            <SegmentedControl 
+                value={mode} 
+                onChange={setMode} 
+                data={[{label: "Alignment List", value:"list"}, {label:"Alignment Net", value:"net"}]} 
+                size="xs"
+                w={280}>
+            </SegmentedControl>
             {objectTypes.map((objectType) => (
-              <Tabs.Panel key={objectType} value={objectType} pt="md" flex={1}>
-                <AlignmentComponent ocelId={id} objectType={objectType} />
+              <Tabs.Panel key={objectType} value={objectType} pt="sm" flex={1}>
+                <AlignmentComponent ocelId={id} objectType={objectType} mode={mode} />
               </Tabs.Panel>
             ))}
           </Stack>
         </Tabs>
       ) : (
-        <AlignmentComponent ocelId={id} objectType={firstObjectType} />
+        <AlignmentComponent ocelId={id} objectType={firstObjectType} mode={mode} />
       )}
     </Theme>
   );
