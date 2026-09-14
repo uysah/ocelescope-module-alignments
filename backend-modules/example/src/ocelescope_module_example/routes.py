@@ -1,10 +1,12 @@
-from fastapi import APIRouter
+from fastapi import APIRouter,HTTPException
 from pydantic import BaseModel
 from ocelescope_module_example.models.alignment import AlignmentsResponse
 from ocelescope_backend.app.dependencies import ApiSession, ApiOcel
-from ocelescope_module_example.utils.alignments import compute_alignments
+from ocelescope_module_example.utils.alignments import compute_alignments, AlignmentComputationError
 from ocelescope import PetriNet
 from typing import cast
+from ocelescope_backend.app.sse_manager import ErrorNotification, sse_manager
+
 router = APIRouter()
 
 
@@ -16,13 +18,26 @@ class HelloResponse(BaseModel):
 def get_alignments(
     ocel: ApiOcel, session: ApiSession, object_type: str, resource_id: str | None = None
 ) -> AlignmentsResponse:
-    if resource_id:
-        resource_store = cast(PetriNet,session.get_resource(resource_id))
-        petri_net = PetriNet(**resource_store.data)
-    else:
-        petri_net = None 
+    try:
+        if resource_id:
+            resource_store = cast(PetriNet,session.get_resource(resource_id))
+            petri_net = PetriNet(**resource_store.data)
+        else:
+            petri_net = None 
 
-    return compute_alignments(ocel, object_type, petri_net)
+        return compute_alignments(ocel, object_type, petri_net)
+    except AlignmentComputationError as e:
+        sse_manager.send_safe(
+            session_id=session.id,
+            message=ErrorNotification(
+                type="error",
+                title="Alignment computation failed",
+                message=str(e),
+                trace=e.trace
+            ),
+        )
+        raise HTTPException(status_code=422, detail=str(e)) from e
+
 
 
 @router.get("/{ocel_id}/objects/types", operation_id="objectTypes")

@@ -22,11 +22,11 @@ const AlignmentComponent = ({
   const [resourceId, setResourceId] = useState<string | null>(null);
   const [hasRun, setHasRun] = useState(false);
 
-  const { data, isFetching, refetch } = useGetAlignments(ocelId,{ object_type: objectType, resource_id: resourceId },{query: {enabled: false, placeholderData: keepPreviousData}});
+  const { data, isFetching, refetch } = useGetAlignments(ocelId,{ object_type: objectType, resource_id: resourceId },{query: {enabled: false, placeholderData: keepPreviousData, retry:false}});
 
-  const runAlignment = () => {
+  const runAlignment = async () => {
     setHasRun(true);
-    refetch();
+    await refetch();
   };
 
   return (

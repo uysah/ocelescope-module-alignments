@@ -6,6 +6,12 @@ import polars
 from ocelescope import  OCEL
 from r4pm.bindings.discovery.case_centric.alphappp.full import PetriNet as R4PMPetriNet
 import uuid
+import traceback
+
+class AlignmentComputationError(Exception):
+    def __init__(self, message: str, trace: str | None = None):
+        super().__init__(message)
+        self.trace = trace or message
 
 
 def to_r4pm_format(petri_net: PetriNet) -> R4PMPetriNet:
@@ -148,7 +154,7 @@ def variant_alignment(proj_id: str, process_model: R4PMPetriNet, options: Option
     return [VariantAlignmentResult(**r) for r in raw_result]
 
 def compute_fitness(alignments:List[VariantAlignmentResult], process_model:R4PMPetriNet) -> FitnessResult:
-    fitness = r4pm.bindings.compute_fitness([a.model_dump() for a in alignments],process_model)
+    fitness = r4pm.bindings.compute_fitness([a.model_dump() for a in alignments], process_model)
     return FitnessResult(**fitness)
 
 
@@ -186,7 +192,10 @@ def compute_aggregated(variant_alignments: List[VariantAlignmentResult],) -> Agg
 def compute_alignments(ocel:OCEL, object_type:str, petri_net: PetriNet | None):
     (proj_id, process_model) = preprocessing(ocel,object_type, petri_net)
     options = {"cost_fn": {"log_move_cost": 1, "model_move_cost": 1, "silent_move_cost": 0, "sync_move_cost": 0}}
-    alignments = variant_alignment(proj_id,process_model,options)
-    fitness = compute_fitness(alignments,process_model)
+    try:
+        alignments = variant_alignment(proj_id, process_model, options)
+        fitness = compute_fitness(alignments, process_model)
+    except Exception as e:
+        raise AlignmentComputationError(e, traceback.format_exc()) from e
     aggregated = compute_aggregated(alignments)
     return AlignmentsResponse(net=convert_net(process_model), variant_alignments=alignments, fitness=fitness,aggregated=aggregated)

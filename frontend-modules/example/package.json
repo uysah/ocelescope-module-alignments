@@ -28,7 +28,8 @@
 		"react": "^19.2.0",
 		"react-dom": "^19.2.0",
 		"@mantine/core": "^9.4.1",
-		"@r4pm/components": "^0.2.0"
+		"@r4pm/components": "^0.2.0",
+		"@mantine/notifications": "^9.4.0"
 	},
 	"devDependencies": {
 		"@ocelescope/api-client": "^0.6.0",
